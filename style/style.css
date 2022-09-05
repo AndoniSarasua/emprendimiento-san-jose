@@ -1,0 +1,215 @@
+/*ALL*/
+* {
+  text-decoration: none;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.link-redes {
+  color: black !important;
+}
+
+.producto {
+  background-color: white;
+  margin: 0.6em;
+  height: 21.875em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.producto .link-producto {
+  border-bottom: 2px solid white;
+}
+.producto .producto-text {
+  padding-top: 20px;
+}
+.producto .producto-text h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+}
+.producto .producto-text .producto__precio {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/*GENERAL*/
+main {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.281);
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  color: black;
+}
+
+/*ANIMACIONES*/
+.link-producto:hover {
+  border-bottom: 2px solid black;
+}
+
+.navegador:hover {
+  border-bottom: 2px solid black;
+}
+
+.chance:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 624px) {
+  header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  header .h1 {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 624px) {
+  header {
+    grid-template-columns: 100%;
+  }
+}
+/*HEADER*/
+header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: white;
+  padding: 15px;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .h1 {
+  grid-row: 1/2;
+  font-size: 35px;
+  color: black;
+  justify-self: center;
+  text-transform: uppercase;
+}
+header nav {
+  grid-column: 1/4;
+  justify-content: center;
+}
+header nav ul {
+  color: black;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  margin: 0.8em;
+  display: flex;
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+header nav ul li .link-nav {
+  color: black;
+}
+
+/*INDEX*/
+.index1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.index1 .text1 h3 {
+  margin-left: -1.1em;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.index1 .text1 p {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.index1 .text1 a {
+  width: 100px;
+  margin-left: 6em;
+  border: 1.5px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/*NOSOTROS*/
+.nosotros {
+  padding-bottom: 20px;
+}
+.nosotros div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ubicacion {
+  width: 50%;
+}
+
+/*CONTACTO*/
+.contacto {
+  padding-bottom: 20px;
+}
+.contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*PERFUMES*/
+.perfumes-text {
+  font-size: small;
+}
+
+.perfumes, .colecciones, .body {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*BANO Y CUERPO*/
+/*COLECCIONES*/
+/*FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer div {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid white;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  /*Modelado con flexbox*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
